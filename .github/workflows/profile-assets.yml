@@ -1,0 +1,77 @@
+name: Profile assets
+
+# README에 쓰이는 이미지(3D 잔디, 스네이크, 풀이 현황, 블로그 최신 글)를 매일 새로 만들어
+# output 브랜치에 올린다. main 브랜치에는 커밋하지 않는다.
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # 매일 03:00 KST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build-cards.mjs"
+      - ".github/3d-contrib.json"
+      - ".github/workflows/profile-assets.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Restore previous assets
+        run: |
+          mkdir -p dist
+          if git clone --quiet --depth 1 --branch output "https://github.com/${GITHUB_REPOSITORY}.git" previous; then
+            cp previous/*.svg dist/ 2>/dev/null || true
+            rm -rf previous
+          fi
+
+      - name: Contribution snake
+        continue-on-error: true
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?color_snake=#38bdf8&color_dots=#161b22,#0b4a3f,#0f766e,#14b8a6,#5eead4
+            dist/snake-light.svg?color_snake=#0ea5e9&color_dots=#ebedf0,#99f6e4,#2dd4bf,#0d9488,#115e59
+
+      - name: 3D contribution calendar
+        continue-on-error: true
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/3d-contrib.json
+
+      - name: Collect 3D calendar
+        continue-on-error: true
+        run: cp profile-3d-contrib/*.svg dist/
+
+      - name: Problem solving & blog cards
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/build-cards.mjs
+
+      - name: Publish to output branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ls -la dist
+          cd dist
+          git init --quiet --initial-branch output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit --quiet -m "Update profile assets"
+          git push --quiet --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output

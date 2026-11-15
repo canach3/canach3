@@ -14,8 +14,7 @@
 
 **Java와 Spring으로 "어긋나면 안 되는 흐름"을 만드는 백엔드 개발자입니다.**
 
-결제에서 매수까지 이어지는 주문 파이프라인, 입찰이 한꺼번에 몰리는 라이브 경매, 실시간 채팅처럼<br />
-상태가 꼬이기 쉬운 문제를 좋아하고, 배운 것은 [CanaCode](https://canacode.blog)에 기록합니다.
+결제에서 매수까지 이어지는 주문 파이프라인, 입찰이 한꺼번에 몰리는 라이브 경매, 실시간 채팅처럼 상태가 꼬이기 쉬운 문제를 좋아하고, 배운 것은 [CanaCode](https://canacode.blog)에 기록합니다.
 
 </div>
 
@@ -83,7 +82,7 @@
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td>
       <h3><a href="https://github.com/Team-Tikkle/Tikkle-be">Tikkle</a></h3>
       <sub><b>Backend</b> &nbsp;·&nbsp; 결제 잔돈 자동 투자 핀테크</sub>
       <p>카드 결제에서 생긴 잔돈을 투자 성향에 맞춰 가상자산 매수로 연결하는 서비스</p>
@@ -95,7 +94,9 @@
       </ul>
       <code>Java 21</code> <code>Spring Boot 4</code> <code>JPA</code> <code>MySQL</code> <code>Redis</code> <code>Spring AI</code> <code>SSE</code> <code>FCM</code> <code>AWS</code>
     </td>
-    <td width="50%" valign="top">
+  </tr>
+  <tr>
+    <td>
       <h3><a href="https://github.com/Team-vintib/VINTIB">VINTIB</a></h3>
       <sub><b>Backend</b> &nbsp;·&nbsp; 라이브 경매 빈티지 의류 거래 플랫폼</sub>
       <p>실시간 라이브 · 경매와 AI 가상 시착을 결합한 빈티지 의류 거래 플랫폼</p>
@@ -109,7 +110,7 @@
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
+    <td>
       <h3><a href="https://github.com/Team-TripAgora/TripAgora-be">TripAgora</a></h3>
       <sub><b>Backend · 1인 개발</b> &nbsp;·&nbsp; C2C 여행 가이드 매칭 플랫폼</sub>
       <p>SOS 안전 케어와 실시간 소통을 지원하는 여행자 중심 가이드 매칭 플랫폼</p>
@@ -121,7 +122,9 @@
       </ul>
       <code>Java 17</code> <code>Spring Boot 3.5</code> <code>JPA</code> <code>QueryDSL</code> <code>MySQL</code> <code>STOMP</code> <code>FCM</code> <code>AWS S3</code>
     </td>
-    <td width="50%" valign="top">
+  </tr>
+  <tr>
+    <td>
       <h3><a href="https://github.com/QuartetTeam/license-hunter-be">자격저격</a></h3>
       <sub><b>Backend</b> &nbsp;·&nbsp; 자격증 정보 플랫폼</sub>
       <p>자격증 정보가 필요한 취업준비생을 위한 웹 서비스</p>

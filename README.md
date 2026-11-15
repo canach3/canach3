@@ -6,6 +6,9 @@
 <br />
 
 <a href="https://canacode.blog"><img src="https://img.shields.io/badge/blog-canacode.blog-0f766e?style=for-the-badge&labelColor=1e293b&logo=rss&logoColor=34d399" alt="블로그 canacode.blog" /></a>
+<a href="mailto:canach3@gmail.com"><img src="https://img.shields.io/badge/gmail-canach3-0f766e?style=for-the-badge&labelColor=1e293b&logo=gmail&logoColor=ea4335" alt="이메일 보내기" /></a>
+<a href="https://www.instagram.com/canach3"><img src="https://img.shields.io/badge/instagram-canach3-0f766e?style=for-the-badge&labelColor=1e293b&logo=instagram&logoColor=e4405f" alt="인스타그램 @canach3" /></a>
+<br />
 <a href="https://solved.ac/profile/canach3"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsolved.ac%2Fapi%2Fv3%2Fuser%2Fshow%3Fhandle%3Dcanach3&query=%24.rating&label=solved.ac%20rating&style=for-the-badge&labelColor=1e293b&color=0f766e" alt="solved.ac 레이팅" /></a>
 <img src="https://hits.sh/github.com/canach3.svg?style=for-the-badge&label=visits&labelColor=1e293b&color=0f766e" alt="프로필 방문 수" />
 

@@ -107,7 +107,7 @@
   <tr>
     <td>
       <h3><a href="https://github.com/Team-TripAgora/TripAgora-be">TripAgora</a></h3>
-      <sub><b>Backend · 1인 개발</b> &nbsp;·&nbsp; C2C 여행 가이드 매칭 플랫폼</sub>
+      <sub><b>Backend </b> &nbsp;·&nbsp; C2C 여행 가이드 매칭 플랫폼</sub>
       <p>실시간 채팅 · 위치 공유 · SOS 안전 케어를 지원하는 가이드–여행자 매칭 플랫폼</p>
       <ul>
         <li>정원 초과 방지 시나리오(정원 10명 · 동시 30명) 벤치마크 후 비관적 락과 (사용자, 여행) 복합 유니크 제약 채택</li>

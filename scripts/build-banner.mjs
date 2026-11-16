@@ -5,13 +5,13 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 const PROFILE = {
   name: 'Cana',
   role: 'Backend Developer',
-  tagline: ['실시간 결제 · 경매 · 채팅처럼', '정합성이 중요한 흐름을 설계하고 구현합니다.'],
+  tagline: ['고객의 니즈에서 출발해', '안정적이고 빠른 백엔드로 완성합니다.'],
   pill: 'canacode.blog',
   terminalTitle: 'cana@github: ~',
   terminal: [
     { cmd: 'whoami', out: 'cana · backend developer', color: '#9fb0c5' },
     { cmd: 'ls ~/projects', out: 'tikkle  tripagora  vintib  license-hunter', color: '#7dd3fc' },
-    { cmd: 'cat focus.txt', out: 'real-time payments · auctions · chat', color: '#9fb0c5' },
+    { cmd: 'cat goal.txt', out: 'customer needs → stable, fast backends', color: '#9fb0c5' },
   ],
   footer: 'echo "thanks for visiting"',
 };

@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://canacode.blog"><img src="./assets/header.svg" width="100%" alt="Cana — Backend Developer. 실시간 결제 · 경매 · 채팅처럼 정합성이 중요한 흐름을 설계하고 구현합니다." /></a>
+<a href="https://canacode.blog"><img src="./assets/header.svg" width="100%" alt="Cana — Backend Developer. 고객의 니즈에서 출발해 안정적이고 빠른 백엔드로 완성합니다." /></a>
 
 <br />
 <br />
@@ -29,6 +29,7 @@
     <td align="right"><b>Language</b></td>
     <td>
       <img src="https://img.shields.io/badge/Java-1e293b?style=for-the-badge&logo=openjdk&logoColor=f89820" alt="Java" />
+      <img src="https://img.shields.io/badge/Python-1e293b?style=for-the-badge&logo=python&logoColor=ffd43b" alt="Python" />
       <img src="https://img.shields.io/badge/C%2B%2B-1e293b?style=for-the-badge&logo=cplusplus&logoColor=659ad2" alt="C++" />
     </td>
   </tr>
@@ -36,12 +37,9 @@
     <td align="right"><b>Backend</b></td>
     <td>
       <img src="https://img.shields.io/badge/Spring%20Boot-1e293b?style=for-the-badge&logo=springboot&logoColor=6db33f" alt="Spring Boot" />
-      <img src="https://img.shields.io/badge/Spring%20Security-1e293b?style=for-the-badge&logo=springsecurity&logoColor=6db33f" alt="Spring Security" />
-      <img src="https://img.shields.io/badge/Spring%20Data%20JPA-1e293b?style=for-the-badge&logo=hibernate&logoColor=bcae79" alt="Spring Data JPA" />
-      <img src="https://img.shields.io/badge/Spring%20AI-1e293b?style=for-the-badge&logo=spring&logoColor=6db33f" alt="Spring AI" />
-      <img src="https://img.shields.io/badge/JWT-1e293b?style=for-the-badge&logo=jsonwebtokens&logoColor=fb015b" alt="JWT" />
+      <img src="https://img.shields.io/badge/JPA-1e293b?style=for-the-badge&logo=hibernate&logoColor=bcae79" alt="JPA" />
       <img src="https://img.shields.io/badge/QueryDSL-1e293b?style=for-the-badge" alt="QueryDSL" />
-      <img src="https://img.shields.io/badge/STOMP%20%C2%B7%20SSE-1e293b?style=for-the-badge" alt="STOMP, SSE" />
+      <img src="https://img.shields.io/badge/WebSocket-1e293b?style=for-the-badge" alt="WebSocket" />
     </td>
   </tr>
   <tr>
@@ -59,22 +57,13 @@
       <img src="https://img.shields.io/badge/Google%20Cloud-1e293b?style=for-the-badge&logo=googlecloud&logoColor=4285f4" alt="Google Cloud" />
       <img src="https://img.shields.io/badge/Docker-1e293b?style=for-the-badge&logo=docker&logoColor=2496ed" alt="Docker" />
       <img src="https://img.shields.io/badge/GitHub%20Actions-1e293b?style=for-the-badge&logo=githubactions&logoColor=2088ff" alt="GitHub Actions" />
-      <img src="https://img.shields.io/badge/Firebase%20FCM-1e293b?style=for-the-badge&logo=firebase&logoColor=ffca28" alt="Firebase Cloud Messaging" />
-    </td>
-  </tr>
-  <tr>
-    <td align="right"><b>Test · Docs</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/JUnit%205-1e293b?style=for-the-badge&logo=junit5&logoColor=25a162" alt="JUnit 5" />
-      <img src="https://img.shields.io/badge/Testcontainers-1e293b?style=for-the-badge" alt="Testcontainers" />
-      <img src="https://img.shields.io/badge/Swagger-1e293b?style=for-the-badge&logo=swagger&logoColor=85ea2d" alt="Swagger" />
+      <img src="https://img.shields.io/badge/GitLab%20CI%2FCD-1e293b?style=for-the-badge&logo=gitlab&logoColor=fc6d26" alt="GitLab CI/CD" />
     </td>
   </tr>
   <tr>
     <td align="right"><b>Tools</b></td>
     <td>
       <img src="https://img.shields.io/badge/Git-1e293b?style=for-the-badge&logo=git&logoColor=f05032" alt="Git" />
-      <img src="https://img.shields.io/badge/GitHub-1e293b?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
       <img src="https://img.shields.io/badge/IntelliJ%20IDEA-1e293b?style=for-the-badge&logo=intellijidea&logoColor=white" alt="IntelliJ IDEA" />
       <img src="https://img.shields.io/badge/Jira-1e293b?style=for-the-badge&logo=jira&logoColor=2684ff" alt="Jira" />
       <img src="https://img.shields.io/badge/Notion-1e293b?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" />
@@ -93,10 +82,10 @@
       <ul>
         <li>결제 알림 수신(HMAC 서명 검증) → 잔돈 계산 → 사용자 승인 → Upbit 입금·매수로 이어지는 주문 파이프라인</li>
         <li>매수 진행 상황을 SSE로 스트리밍하고, 전달하지 못한 결과는 FCM으로 통보</li>
-        <li>Spring AI(Gemini · DeepSeek) 기반 가맹점 분류와 투자 후보군 생성</li>
+        <li>LLM(Gemini · DeepSeek) 기반 가맹점 분류와 투자 후보군 생성</li>
         <li>GCP → AWS 이전, GitHub Actions OIDC + SSM 배포 파이프라인 구축</li>
       </ul>
-      <code>Java 21</code> <code>Spring Boot 4</code> <code>JPA</code> <code>MySQL</code> <code>Redis</code> <code>Spring AI</code> <code>SSE</code> <code>FCM</code> <code>AWS</code>
+      <code>Java 21</code> <code>Spring Boot 4</code> <code>JPA</code> <code>MySQL</code> <code>Redis</code> <code>Docker</code> <code>AWS</code>
     </td>
   </tr>
   <tr>
@@ -109,8 +98,9 @@
         <li>입찰 포인트 보류·해제 설계와 동시성 경합 테스트로 입찰 정합성 검증</li>
         <li>LiveKit(WebRTC) 라이브 방송, STOMP 기반 시청자 집계와 판매 이벤트 전파</li>
         <li>알림 중복 방지 정책, 배송 상태 추적, 포인트 충전·환불</li>
+        <li>GitLab CI/CD — MR마다 PostgreSQL·Redis 서비스 컨테이너로 테스트하고, main 병합 시 자동 배포</li>
       </ul>
-      <code>Java 21</code> <code>Spring Boot 4</code> <code>JPA</code> <code>PostgreSQL</code> <code>Redis</code> <code>STOMP</code> <code>LiveKit</code> <code>Docker</code>
+      <code>Java 21</code> <code>Spring Boot 4</code> <code>JPA</code> <code>PostgreSQL</code> <code>Redis</code> <code>Docker</code> <code>GitLab CI/CD</code>
     </td>
   </tr>
   <tr>
@@ -124,7 +114,7 @@
         <li>QueryDSL 기반 조회, Testcontainers 통합 테스트</li>
         <li>GitHub Actions 테스트·배포 자동화</li>
       </ul>
-      <code>Java 17</code> <code>Spring Boot 3.5</code> <code>JPA</code> <code>QueryDSL</code> <code>MySQL</code> <code>STOMP</code> <code>FCM</code> <code>AWS S3</code>
+      <code>Java 17</code> <code>Spring Boot 3.5</code> <code>JPA</code> <code>MySQL</code> <code>AWS S3</code>
     </td>
   </tr>
   <tr>
@@ -133,11 +123,11 @@
       <sub><b>Backend</b> &nbsp;·&nbsp; 자격증 정보 플랫폼</sub>
       <p>자격증 정보가 필요한 취업준비생을 위한 웹 서비스</p>
       <ul>
-        <li>Spring Security + OAuth2 소셜 로그인(Google · Kakao)</li>
+        <li>OAuth2 소셜 로그인(Google · Kakao)</li>
         <li>JWT 액세스 토큰 발급·검증 흐름</li>
         <li>마이페이지 API</li>
       </ul>
-      <code>Java 21</code> <code>Spring Boot 3.4</code> <code>Spring Security</code> <code>OAuth2</code> <code>JWT</code> <code>MySQL</code>
+      <code>Java 21</code> <code>Spring Boot 3.4</code> <code>JPA</code> <code>MySQL</code>
     </td>
   </tr>
 </table>

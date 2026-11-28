@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="170" viewBox="0 0 350 170" role="img" aria-label="문제 풀이 591개">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x=".5" y=".5" width="349" height="169" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', Helvetica, Arial, sans-serif">
+    <linearGradient id="count" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="92" y2="0"><stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+<text x="20" y="30" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="10.5" letter-spacing="1.3" text-anchor="start" fill="#8b949e">PROBLEMS SOLVED</text>
+    <text x="19" y="76"><tspan font-size="40" font-weight="800" letter-spacing="-1" fill="url(#count)">591</tspan><tspan dx="8" font-size="12" fill="#8b949e">문제 · 5개 플랫폼</tspan></text>
+    <clipPath id="judge"><rect x="20" y="92" width="310" height="8" rx="4"><animate attributeName="width" values="0;310" keyTimes="0;1" calcMode="spline" keySplines=".2 .7 .2 1" dur="1.1s" fill="freeze"/></rect></clipPath>
+    <rect x="20" y="92" width="310" height="8" rx="4" fill="#21262d"/>
+    <g clip-path="url(#judge)"><rect x="20" y="92" width="184.08" height="8" fill="#34d399"/><rect x="206.08" y="92" width="75.26" height="8" fill="#38bdf8"/><rect x="283.34" y="92" width="39.66" height="8" fill="#818cf8"/><rect x="325" y="92" width="5" height="8" fill="#64748b"/></g>
+    <circle cx="24" cy="113" r="4" fill="#34d399"/><text x="33" y="117" font-size="11"><tspan font-weight="600" fill="#e6edf3">백준</tspan><tspan dx="5" fill="#8b949e">362</tspan></text>
+    <circle cx="96.69" cy="113" r="4" fill="#38bdf8"/><text x="105.69" y="117" font-size="11"><tspan font-weight="600" fill="#e6edf3">SWEA</tspan><tspan dx="5" fill="#8b949e">148</tspan></text>
+    <circle cx="177.31" cy="113" r="4" fill="#818cf8"/><text x="186.31" y="117" font-size="11"><tspan font-weight="600" fill="#e6edf3">프로그래머스</tspan><tspan dx="5" fill="#8b949e">78</tspan></text>
+    <circle cx="287.4" cy="113" r="4" fill="#64748b"/><text x="296.4" y="117" font-size="11"><tspan font-weight="600" fill="#e6edf3">기타</tspan><tspan dx="5" fill="#8b949e">3</tspan></text>
+    <clipPath id="tier"><rect x="20" y="130" width="310" height="8" rx="4"><animate attributeName="width" values="0;310" keyTimes="0;1" calcMode="spline" keySplines=".2 .7 .2 1" dur="1.1s" fill="freeze"/></rect></clipPath>
+    <rect x="20" y="130" width="310" height="8" rx="4" fill="#21262d"/>
+    <g clip-path="url(#tier)"><rect x="20" y="130" width="143.22" height="8" fill="#c96a12"/><rect x="165.22" y="130" width="89.62" height="8" fill="#6b8cae"/><rect x="256.83" y="130" width="66.17" height="8" fill="#ec9a00"/><rect x="325" y="130" width="5" height="8" fill="#27e2a4"/></g>
+    <circle cx="24" cy="151" r="4" fill="#c96a12"/><text x="33" y="155" font-size="11"><tspan font-weight="600" fill="#e6edf3">Bronze</tspan><tspan dx="5" fill="#8b949e">171</tspan></text>
+    <circle cx="108.76" cy="151" r="4" fill="#6b8cae"/><text x="117.76" y="155" font-size="11"><tspan font-weight="600" fill="#e6edf3">Silver</tspan><tspan dx="5" fill="#8b949e">107</tspan></text>
+    <circle cx="193.51" cy="151" r="4" fill="#ec9a00"/><text x="202.51" y="155" font-size="11"><tspan font-weight="600" fill="#e6edf3">Gold</tspan><tspan dx="5" fill="#8b949e">79</tspan></text>
+    <circle cx="259.57" cy="151" r="4" fill="#27e2a4"/><text x="268.57" y="155" font-size="11"><tspan font-weight="600" fill="#e6edf3">Platinum</tspan><tspan dx="5" fill="#8b949e">5</tspan></text>
+  </g>
+</svg>
